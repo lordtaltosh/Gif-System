@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
     function addNewButton() {
         $("#addGif").on("click", function () {
-            var gif = $("#action-input").val().trim();
+            var gif = $("#gif-input").val().trim();
             if (gif == "") {
                 return false;
             }
@@ -67,6 +67,7 @@ $(document).ready(function () {
     displayGifButtons();
     addNewButton();
     removeLastButton();
+
 
     $(document).on("click", ".action", displayGifs);
     $(document).on("click", ".image", function () {
